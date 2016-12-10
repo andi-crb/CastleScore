@@ -1,4 +1,11 @@
 /* app css stylesheet */
+body {
+  background-color: #F1F1D4;
+}
+
+div {
+  background-color: #F1F1D4;
+}
 
 .menu {
   list-style: none;

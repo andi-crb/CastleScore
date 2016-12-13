@@ -7,6 +7,14 @@ div {
   background-color: #F1F1D4;
 }
 
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

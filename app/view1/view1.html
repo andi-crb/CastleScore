@@ -1,10 +1,17 @@
 <p>This is the partial for view 1.</p>
 
 
-<div ng-app="" ng-init="myColA='blue'; myNameA='Player Two'">
+<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'">
 
 <input ng-model="myNameA" value="{{myNameA}}">
-<input ng-model="myColA" value="{{myColA}}">
+<select ng-model="myColA">
+  <option value="red">Red
+  <option value="blue">Blue
+  <option value="green">Green
+  <option value="yellow">Yellow
+  <option value="pink">Pink
+  <option value="black">Black
+</select>
 
 <div class="{{myColA}}">
 
@@ -17,10 +24,17 @@
 </div>
 </div>
 
-<div ng-app="" ng-init="myColB='blue'; myNameB='Player Two'">
+<div ng-app="" ng-init="myColB='red'; myNameB='Player Two'">
 
 <input ng-model="myNameB" value="{{myNameB}}">
-<input ng-model="myColB" value="{{myColB}}">
+<select ng-model="myColB">
+  <option value="red">Red
+  <option value="blue">Blue
+  <option value="green">Green
+  <option value="yellow">Yellow
+  <option value="pink">Pink
+  <option value="black">Black
+</select>
 
 <div class="{{myColB}}">
 

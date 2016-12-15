@@ -1,13 +1,31 @@
 <p>This is the partial for view 1.</p>
 
-<div class="red">
+
+<div ng-app="" ng-init="myColA='blue'; myNameA='Player Two'">
+
+<input ng-model="myNameA" value="{{myNameA}}">
+<input ng-model="myColA" value="{{myColA}}">
+
+<div class="{{myColA}}">
+
+<p>{{myNameA}}</p>
+
 <img src="../img/field.png">
 <img src="../img/horseshoe.png">
 <img src="../img/monk-face.png">
 <img src="../img/village.png">
 </div>
+</div>
 
-<div class="blue">
+<div ng-app="" ng-init="myColB='blue'; myNameB='Player Two'">
+
+<input ng-model="myNameB" value="{{myNameB}}">
+<input ng-model="myColB" value="{{myColB}}">
+
+<div class="{{myColB}}">
+
+<p>{{myNameB}}</p>
+
 <img src="../img/field.png">
 <img src="../img/horseshoe.png">
 <img src="../img/monk-face.png">

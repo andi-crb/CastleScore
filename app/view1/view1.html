@@ -18,10 +18,30 @@
 <p>{{myNameA}}</p>
 
 <img src="../img/field.png">
-<img src="../img/horseshoe.png">
-<img src="../img/monk-face.png">
-<img src="../img/village.png">
+<img src="../img/road.png">
+<img src="../img/cloister.png">
+<img src="../img/city.png">
 </div>
+
+<div ng-switch="enteringA">
+  <div ng-switch-when="field">
+     <h1>Dogs</h1>
+     <p>Welcome to a world of dogs.</p>
+  </div>
+  <div ng-switch-when="road">
+     <h1>Tutorials</h1>
+     <p>Learn from examples.</p>
+  </div>
+  <div ng-switch-when="cloister">
+     <h1>Cars</h1>
+     <p>Read about cars.</p>
+  </div>
+  <div ng-switch-when="city">
+     <h1>Cars</h1>
+     <p>Read about cars.</p>
+  </div>
+</div>
+
 </div>
 
 <input ng-model="myNameB" value="{{myNameB}}">
@@ -39,7 +59,8 @@
 <p>{{myNameB}}</p>
 
 <img src="../img/field.png">
-<img src="../img/horseshoe.png">
-<img src="../img/monk-face.png">
-<img src="../img/village.png">
+<img src="../img/road.png">
+<img src="../img/cloister.png">
+<img src="../img/city.png">
+</div>
 </div>

@@ -1,66 +1,57 @@
 <p>This is the partial for view 1.</p>
 
 
-<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two'">
+<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two' ">
 
-<input ng-model="myNameA" value="{{myNameA}}">
-<select ng-model="myColA">
-  <option value="red">Red
-  <option value="blue">Blue
-  <option value="green">Green
-  <option value="yellow">Yellow
-  <option value="pink">Pink
-  <option value="black">Black
-</select>
-
-<div class="{{myColA}}">
-
-<p>{{myNameA}}</p>
-
-<img src="../img/field.png">
-<img src="../img/road.png">
-<img src="../img/cloister.png">
-<img src="../img/city.png">
-</div>
-
-<div ng-switch="enteringA">
-  <div ng-switch-when="field">
-     <h1>Dogs</h1>
-     <p>Welcome to a world of dogs.</p>
+  <input ng-model="myNameA" value="{{myNameA}}">
+    <select ng-model="myColA">
+      <option value="red">Red
+      <option value="blue">Blue
+      <option value="green">Green
+      <option value="yellow">Yellow
+      <option value="pink">Pink
+      <option value="black">Black
+    </select>
+  <div class="{{myColA}}">
+    <p>{{myNameA}}</p>
+    <a href="#" ng-click="enteringA='field'"><img src="../img/field.png"></a>
+    <img src="../img/road.png">
+    <img src="../img/cloister.png">
+    <img src="../img/city.png">
+    <div ng-switch="enteringA">
+      <div ng-switch-when="field">
+         <h1>Field</h1>
+      </div>
+      <div ng-switch-when="road">
+         <h1>Road</h1>
+      </div>
+      <div ng-switch-when="cloister">
+         <h1>cloister</h1>
+      </div>
+      <div ng-switch-when="city">
+         <h1>Cars</h1>
+         <p>Read about cars.</p>
+      </div>
+    </div>
   </div>
-  <div ng-switch-when="road">
-     <h1>Tutorials</h1>
-     <p>Learn from examples.</p>
+
+  <input ng-model="myNameB" value="{{myNameB}}">
+  <select ng-model="myColB">
+    <option value="red">Red
+    <option value="blue">Blue
+    <option value="green">Green
+    <option value="yellow">Yellow
+    <option value="pink">Pink
+    <option value="black">Black
+  </select>
+
+  <div class="{{myColB}}">
+
+  <p>{{myNameB}}</p>
+
+  <img src="../img/field.png">
+  <img src="../img/road.png">
+  <img src="../img/cloister.png">
+  <img src="../img/city.png">
   </div>
-  <div ng-switch-when="cloister">
-     <h1>Cars</h1>
-     <p>Read about cars.</p>
-  </div>
-  <div ng-switch-when="city">
-     <h1>Cars</h1>
-     <p>Read about cars.</p>
-  </div>
-</div>
-
-</div>
-
-<input ng-model="myNameB" value="{{myNameB}}">
-<select ng-model="myColB">
-  <option value="red">Red
-  <option value="blue">Blue
-  <option value="green">Green
-  <option value="yellow">Yellow
-  <option value="pink">Pink
-  <option value="black">Black
-</select>
-
-<div class="{{myColB}}">
-
-<p>{{myNameB}}</p>
-
-<img src="../img/field.png">
-<img src="../img/road.png">
-<img src="../img/cloister.png">
-<img src="../img/city.png">
-</div>
 </div>

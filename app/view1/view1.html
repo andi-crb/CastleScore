@@ -1,7 +1,7 @@
 <p>This is the partial for view 1.</p>
 
 
-<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two' ">
+<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two'; enteringA='' ">
 
   <input ng-model="myNameA" value="{{myNameA}}">
     <select ng-model="myColA">
@@ -14,11 +14,11 @@
     </select>
   <div class="{{myColA}}">
     <p>{{myNameA}}</p>
-    <a href="#" ng-click="enteringA='field'"><img src="../img/field.png"></a>
-    <img src="../img/road.png">
-    <img src="../img/cloister.png">
-    <img src="../img/city.png">
-    <div ng-switch="enteringA">
+    <img ng-click="enteringA='field'" src="../img/field.png"></a>
+    <img ng-click="enteringA='road'" src="../img/road.png">
+    <img ng-click="enteringA='cloister'" src="../img/cloister.png">
+    <img ng-click="enteringA='city'" src="../img/city.png">
+    <div ng-switch on="enteringA">
       <div ng-switch-when="field">
          <h1>Field</h1>
       </div>
@@ -29,8 +29,8 @@
          <h1>cloister</h1>
       </div>
       <div ng-switch-when="city">
-         <h1>Cars</h1>
-         <p>Read about cars.</p>
+         <h1>City</h1>
+         <p>Read about cities.</p>
       </div>
     </div>
   </div>

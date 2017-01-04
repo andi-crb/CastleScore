@@ -1,7 +1,7 @@
 <p>This is the partial for view 1.</p>
 
 
-<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two'; enteringA='' ">
+<div ng-app="" ng-init="myColA='blue'; myNameA='Player One'; myColB='red'; myNameB='Player Two'; enteringA=''; roadLength=0 ">
 
   <input ng-model="myNameA" value="{{myNameA}}">
     <select ng-model="myColA">
@@ -18,12 +18,15 @@
     <img ng-click="enteringA='road'" src="../img/road.png">
     <img ng-click="enteringA='cloister'" src="../img/cloister.png">
     <img ng-click="enteringA='city'" src="../img/city.png">
-    <div ng-switch on="enteringA">
-      <div ng-switch-when="field">
+    <span ng-switch on="enteringA">
+      <span ng-switch-when="field">
          <h1>Field</h1>
-      </div>
+
+      </span>
       <div ng-switch-when="road">
          <h1>Road</h1>
+         <input ng-model="RoadLength" value="{{roadLength}}">
+          <input type="submit" type="number" min="1" ng-click="u" value="Enter" />
       </div>
       <div ng-switch-when="cloister">
          <h1>cloister</h1>
@@ -32,7 +35,7 @@
          <h1>City</h1>
          <p>Read about cities.</p>
       </div>
-    </div>
+    </span>
   </div>
 
   <input ng-model="myNameB" value="{{myNameB}}">
